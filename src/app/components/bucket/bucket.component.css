@@ -1,0 +1,66 @@
+
+.content {
+  display: flex;
+  margin: 200px auto 32px;
+  padding: 0 16px;
+  max-width: 1060px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pay-btn {
+  width: 150px;
+  margin-left: 77px;
+}
+
+.number {
+   min-height: 41px;
+   border: solid 1px #ced4da;
+   max-width: 90px;
+   border-radius: 4px;
+   padding-left: 10px;
+   outline: none;
+   color: #6c757d;
+ }
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  opacity: 1;
+}
+
+.go-bucket {
+  cursor: pointer;
+  color: #1976d2;
+}
+
+.mat-radio-button ~ .mat-radio-button {
+  margin-left: 16px;
+}
+
+.input-discount {
+  width: 200px;
+  margin-right: 10px;
+}
+
+.discount-code {
+  padding-left: 10px;
+}
+
+.text-margin {
+  margin-right: 6px;
+}
+.mat-cell {
+  color: black;
+}
+
+.mat-table {
+  background: white;
+}
+.mat-row,  mat-header-row,  mat-footer-row, th.mat-header-cell, td.mat-cell, td.mat-footer-cell {
+  border-bottom-color: #6c757d8c;
+}
+
+.mat-header-cell {
+  color: black;
+  font-size: medium;
+}

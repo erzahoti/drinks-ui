@@ -1,0 +1,25 @@
+
+<!-- Header -->
+<app-header></app-header>
+
+<div class="content" role="main">
+
+  <!-- Resources -->
+  <h2>Drinks</h2>
+  <p>Choose your drinks:</p>
+
+  <div class="card-container" *ngFor="let drink of drinks">
+    <div class="card" (click)="addToBucket(drink)">
+      <p>{{drink.drinkType.description}}</p>
+      <p>{{drink.price}} $</p>
+    </div>
+    <i class="fa fa-plus add-drink" aria-hidden="true"></i>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    Did you finish?&nbsp;
+    <p (click)="goToBucket();" class="go-bucket"> Continue to cart.
+    </p>
+  </footer>
+</div>
