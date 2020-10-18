@@ -40,6 +40,9 @@ export class BucketComponent implements OnInit {
         .subscribe(
           data => {
             this.bucket = data;
+            this.snackBar.open('Discount applied Successfully!', 'Success', {
+              duration: 2000,
+            });
           },
           error => {
             this.snackBar.open('Discount not found!', 'Error', {
@@ -60,7 +63,7 @@ export class BucketComponent implements OnInit {
           }
         },
         error => {
-          this.snackBar.open('Something went bad!!', 'Error', {
+          this.snackBar.open('Something went wrong!!', 'Error', {
             duration: 2000,
           });
         });
@@ -86,7 +89,9 @@ export class BucketComponent implements OnInit {
             this.gotToDrinks();
           },
           error => {
-            console.log(error);
+            this.snackBar.open('Something went wrong!', 'Error', {
+              duration: 2000,
+            });
           });
   }
 }

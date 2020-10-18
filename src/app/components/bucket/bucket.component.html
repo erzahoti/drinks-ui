@@ -56,7 +56,7 @@
                <i class="fa fa-credit-card" aria-hidden="true"></i>
                Card
              </mat-radio-button>
-             <mat-radio-button *ngIf="bucket?.finalTotalPrice < 10" value="CASH">
+             <mat-radio-button *ngIf="bucket?.finalTotalPrice <= 10" value="CASH">
                <i class="fa fa-dollar" aria-hidden="true"></i>
                Cash</mat-radio-button>
            </mat-radio-group>
