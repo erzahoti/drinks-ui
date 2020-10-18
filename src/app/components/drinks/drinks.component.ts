@@ -33,7 +33,6 @@ export class DrinksComponent implements OnInit {
         console.log(data);
         this.snackBar.open('Added Successfully', 'Drink', {
           duration: 2000,
-          verticalPosition: 'top',
           panelClass: 'l-snackbar-success'
         });
       }, error => {
